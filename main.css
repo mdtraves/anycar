@@ -1,0 +1,173 @@
+@charset "UTF-8";
+* {
+  font-family: helvetica;
+  margin: 0;
+  padding: 0px; }
+
+button {
+  border-radius: 0px; }
+
+.img-responsive {
+  width: 100%; }
+
+.navigation {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 15px #ccc;
+  box-shadow: 0px 4px 15px #ccc; }
+
+.left h1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #629eca; }
+  .left h1 .dark {
+    color: #0b51a1; }
+
+.right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .right .nav-contact {
+    margin-top: 10px; }
+    .right .nav-contact h2 {
+      font-size: 1em;
+      font-weight: 600; }
+    .right .nav-contact button {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      background-color: #0b51a1;
+      color: #fff;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .right .nav-contact button img {
+        display: inline;
+        height: 40px;
+        width: 40px; }
+      .right .nav-contact button p {
+        display: inline;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 0px; }
+
+.hero .row {
+  background-image: url(Links/webuy-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 450px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .hero .row .hero-text {
+    padding: 20px 20px; }
+    .hero .row .hero-text h3 {
+      color: #29235c;
+      font-size: 3.2vmin;
+      font-weight: 800; }
+  .hero .row li {
+    list-style-type: none;
+    text-indent: -30px;
+    font-size: 2.3vmin;
+    margin-left: 25px;
+    line-height: 2.2em; }
+  .hero .row li:before {
+    content: '✔';
+    color: #629eca;
+    font-size: 2em; }
+
+.input-form {
+  background-color: #629eca;
+  font-size: 1.1em; }
+  .input-form .input-bar {
+    height: 90px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px; }
+    .input-form .input-bar p {
+      font-size: 1.5em;
+      color: #fff;
+      margin: 0px; }
+    .input-form .input-bar input {
+      margin: 0px 20px;
+      border: 2px #0b51a1 solid;
+      padding: 15px; }
+    .input-form .input-bar button {
+      background-color: #0b51a1;
+      border: 2px #0b51a1 solid;
+      padding: 15px 30px;
+      font-weight: 600;
+      color: #fff; }
+
+.products {
+  position: relative;
+  height: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .products h4 {
+    font-weight: 800;
+    color: #0b51a1; }
+  .products img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px; }
+  .products .car {
+    width: 100%;
+    margin-bottom: 45px; }
+
+#car-left, #car-right {
+  height: 350px;
+  border-right: 1px darkgray solid;
+  border-left: 1px darkgray solid; }
+
+.header-main {
+  height: 500px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 50px; }
+  .header-main h1 {
+    font-weight: 700;
+    color: #0b51a1;
+    padding: 20px; }
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: block;
+    height: 200px; }
+  .left h1 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .right {
+    display: block;
+    text-align: center; } }

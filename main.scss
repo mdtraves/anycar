@@ -1,0 +1,203 @@
+*{font-family: helvetica;margin: 0;padding: 0px;}
+button{border-radius: 0px;}
+.img-responsive{width: 100%;}
+
+$BlueDarkest: rgb(41,35,92);
+$BlueDark: rgb(11,81,161);
+$BlueLight: rgb(98,158,202);
+$GrayLight: rgb(245,245,245);
+
+
+//// start of page layout /////
+
+
+
+.navigation {
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px #ccc;
+}
+
+.left {
+    h1{
+        font-size: 3em;
+        font-weight: 800;
+        color: $BlueLight;
+    .dark{
+        color: $BlueDark;
+            }
+        }  
+    }
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .nav-contact{
+        margin-top: 10px;
+        h2 {
+            font-size: 1em;
+            font-weight: 600;
+        }
+        button {
+            display: flex;
+            width:100%;
+            background-color: $BlueDark;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+        img {
+            display: inline;
+            height: 40px;
+            width: 40px;
+            }
+        p   {
+            display: inline;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 0px;
+            }
+        }
+    }
+}
+
+
+
+.hero {
+    .row{
+        background-image: url(Links/webuy-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 450px;
+        display: flex;
+        align-items: center;
+        .hero-text {
+            padding: 20px 20px;
+        h3{
+            color: $BlueDarkest;
+            font-size: 3.2vmin;
+            font-weight: 800;
+            }
+         }
+        li {
+            list-style-type: none;
+            text-indent: -30px;
+            font-size: 2.3vmin;
+            margin-left: 25px;
+            line-height: 2.2em;
+        }
+        li:before {
+            content: '✔';
+            color: $BlueLight;
+            font-size: 2em;
+    }
+  }
+}
+
+
+
+.input-form {
+    background-color: $BlueLight;
+    font-size: 1.1em;
+    .input-bar{
+       height: 90px;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        p {
+            font-size: 1.5em;
+            color: #fff;
+            margin: 0px;
+        }
+        input {
+            margin: 0px 20px;
+            border: 2px $BlueDark solid;
+            padding: 15px;
+        }
+        button {
+            background-color: $BlueDark;
+            border: 2px $BlueDark solid;
+            padding: 15px 30px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.products {
+    position: relative;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h4{
+       font-weight: 800;
+        color: $BlueDark;
+    }
+    img{
+        position:absolute;
+        left: 0;
+        bottom: 0;
+        padding: 15px;
+    }
+    .car {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+}
+
+
+#car-left, #car-right {
+    height: 350px;
+    border-right: 1px darkgray solid;
+    border-left: 1px darkgray solid;
+}
+
+.header-main {
+    height: 500px;
+    background-color: $GrayLight;
+    text-align: center;
+    padding: 50px;
+    h1{
+        font-weight: 700;
+        color: $BlueDark;
+        padding: 20px;
+    }
+}
+
+
+
+
+// start of media queries //
+
+
+
+@media screen and ( max-width: 768px ) {
+    
+    .navigation {
+        display: block;
+        height: 200px;
+}
+    
+    .left {
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        }  
+    }
+
+
+.right {
+    display: block;
+    text-align: center;
+}
+
+    
+}
+
+
+
