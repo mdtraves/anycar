@@ -64,20 +64,15 @@ $GrayLight: rgb(245,245,245);
             color: #fff;
             justify-content: center;
             align-items: center;
-            font-size: 1em;
+            font-size: 1.5em;
+            font-weight: 600;
             
         img {
             display: inline;
-            height: 45px;
-            width: 45px;
+            height: 50px;
+            width: 50px;
             }
-            
-        p   {
-            display: inline;
-            font-size: 1.7em;
-            font-weight: 600;
-            margin: 5px;
-            }
+       
         }
     }
 }
@@ -151,7 +146,7 @@ $GrayLight: rgb(245,245,245);
         align-items: center;
         padding: 0px;
         
-        p {
+        h4 {
             font-size: 1.3em;
             color: #fff;
             margin: 10px auto;
@@ -209,7 +204,8 @@ $GrayLight: rgb(245,245,245);
     }
     
     p {
-               position: absolute;
+        font-size: 1.4vh;
+    position: absolute;
     bottom: 20px;
     left: 45px;
     color: #fff;
