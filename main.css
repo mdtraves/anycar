@@ -11,7 +11,10 @@ h1 {
   margin: 0; }
 
 .img-responsive {
-  width: 100%; }
+  max-width: 100%; }
+
+.container {
+  max-width: 80%; }
 
 .navigation {
   position: relative;
@@ -75,7 +78,7 @@ h1 {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 600; }
     .right .nav-contact button img {
       display: inline;
@@ -87,7 +90,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 400px;
+  min-height: 500px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -100,30 +103,31 @@ h1 {
     padding: 20px 20px; }
     .hero .row .hero-text h3 {
       color: #29235c;
-      font-size: 3.2vmin;
-      font-weight: 800; }
-  .hero .row li {
-    list-style-type: none;
-    text-indent: -30px;
-    font-size: 2.3vmin;
-    margin-left: 25px;
-    line-height: 2.2em; }
-  .hero .row li:before {
-    content: '✔';
-    color: #629eca;
-    font-size: 2em; }
+      font-size: 3.0vmin;
+      font-weight: 800;
+      margin-bottom: 25px; }
+    .hero .row .hero-text li {
+      list-style-type: none;
+      text-indent: -42px;
+      font-size: 2.3vmin;
+      margin-left: 35px;
+      line-height: 2.2em; }
+    .hero .row .hero-text li:before {
+      content: '✔';
+      color: #629eca;
+      font-size: 2em; }
   .hero .row .hero-img {
     min-height: 450px; }
     .hero .row .hero-img #five {
-      height: 200px;
+      height: 170px;
       position: absolute;
-      top: 20px;
-      right: 40px; }
+      top: 30px;
+      right: 50px; }
     .hero .row .hero-img #trust {
       height: 150px;
       position: absolute;
-      bottom: 20px;
-      right: 40px; }
+      bottom: 30px;
+      right: 50px; }
 
 .input-form {
   background-color: #629eca;
@@ -143,7 +147,7 @@ h1 {
       font-size: 1.3em;
       color: #fff;
       margin: 10px auto;
-      font-size: 1.5em; }
+      font-size: 2.3vmin; }
     .input-form .input-bar input {
       margin: 0px 20px;
       border: 2px #0b51a1 solid;
@@ -155,47 +159,33 @@ h1 {
       font-weight: 600;
       color: #fff; }
 
-#left p {
-  margin-right: 0px; }
-
 .products {
   padding-top: 50px;
   padding-bottom: 50px; }
-  .products .row {
-    padding: 60px 60px;
-    height: 400px; }
-    .products .row .car-box {
-      height: 350px;
-      border-right: 1px solid #ccc;
-      border-left: 1px solid #ccc; }
-      .products .row .car-box h4 {
-        font-weight: 800;
-        color: #0b51a1; }
-      .products .row .car-box .flash {
-        bottom: 0; }
-      .products .row .car-box img {
-        position: absolute;
-        left: 0;
-        bottom: 20px;
-        padding: 20px; }
-      .products .row .car-box p {
-        font-size: 1.4vh;
-        position: absolute;
-        bottom: 20px;
-        left: 45px;
-        color: #fff; }
-        .products .row .car-box p .bold {
-          font-weight: 800; }
-    .products .row #car-center {
-      border: none; }
-    .products .row .car {
+  .products .row .car-box {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    min-height: 500px; }
+    .products .row .car-box .car {
       width: 100%;
       margin-bottom: 50px; }
+    .products .row .car-box h4 {
+      font-weight: 800;
+      color: #0b51a1; }
+    .products .row .car-box .flash {
+      bottom: 0; }
+    .products .row .car-box img {
+      position: absolute;
+      left: 0;
+      bottom: 50px;
+      padding: 10px; }
+  .products .row #car-center {
+    border: none; }
 
 .header-main {
   background-color: whitesmoke;
   text-align: center;
-  padding: 20px; }
+  padding-bottom: 50px; }
   .header-main h1 {
     font-weight: 700;
     color: #0b51a1;
@@ -204,16 +194,10 @@ h1 {
 @media screen and (max-width: 990px) {
   .input-form {
     font-size: .8em; }
-    .input-form .input-bar {
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      padding: 0px; }
-      .input-form .input-bar input {
-        margin: 5px; } }
+    .input-form .input-bar input {
+      margin: 5px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation {
     height: 210px; }
     .navigation .left {
@@ -236,50 +220,56 @@ h1 {
     .hero .row .hero-img {
       background-image: url(Links/stock-photo-young-woman-drive-a-car-294232229.jpg);
       background-size: cover;
+      background-position: center bottom;
       height: 400px;
-      margin-bottom: 40px; }
+      margin-bottom: 30px; }
       .hero .row .hero-img #five {
-        height: 150px;
-        position: absolute;
-        top: 20px;
-        left: 20px; }
-      .hero .row .hero-img #trust {
         height: 120px;
-        position: absolute;
-        bottom: 20px;
-        left: 20px; }
+        top: 50px;
+        right: 10px; }
+      .hero .row .hero-img #trust {
+        height: 100px;
+        bottom: 50px;
+        right: 10px; }
   .input-form {
-    font-size: 1em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     height: 180px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-    .input-form #right {
-      padding-bottom: 20px; }
-    .input-form #left p {
-      margin: 0 auto; }
     .input-form .input-bar {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; }
+    .input-form #right {
+      padding-bottom: 20px; }
+    .input-form #left h4 {
+      margin: 0 auto;
+      font-size: 4vmin; }
   .products .row .car-box {
-    border: none; }
+    border: none;
+    min-height: 450px;
+    padding: 30px; }
   .products .row .car {
-    margin-bottom: 45px; }
+    margin-bottom: 50px;
+    max-height: 300px;
+    padding: 10px; }
   .products .row #car-left, .products .row #car-center, .products .row #car-right {
-    margin: 30px 0px; }
-    .products .row #car-left p, .products .row #car-center p, .products .row #car-right p {
-      bottom: 30px;
-      left: 80px; }
-  .header-main {
-    margin-top: 900px; } }
+    margin: 30px 0px; } }
 
 @media screen and (max-width: 500px) {
   .input-form {
-    font-size: .7em; } }
+    font-size: .7em; }
+  .products .row .car-box {
+    min-height: 380px; }
+  .products .row .car {
+    margin-bottom: 10px;
+    max-height: 300px;
+    padding: 10px; }
+  .hero .row .hero-img #five {
+    height: 80px;
+    top: 80px; }
+  .hero .row .hero-img #trust {
+    height: 80px;
+    bottom: 20px; } }

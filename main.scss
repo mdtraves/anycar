@@ -1,7 +1,8 @@
 *{font-family: helvetica;margin: 0;padding: 0px;}
 button{border-radius: 0px;}
 h1{margin: 0}
-.img-responsive{width: 100%;}
+.img-responsive{max-width: 100%;}
+.container{max-width: 80%}
 
 $BlueDarkest: rgb(41,35,92);
 $BlueDark: rgb(11,81,161);
@@ -9,7 +10,12 @@ $BlueLight: rgb(98,158,202);
 $GrayLight: rgb(245,245,245);
 
 
+
+
+
 //// start of page layout /////
+
+
 
 
 
@@ -19,7 +25,6 @@ $GrayLight: rgb(245,245,245);
     height: 120px;
     background-color: #fff;
     box-shadow: 0px 4px 15px #ccc;
-    
     .container {
        padding-top: 20px;
     }
@@ -28,7 +33,6 @@ $GrayLight: rgb(245,245,245);
 .left {
     display: flex;
     align-items: center;
-    
     img {
         display: inline-block;
         height: 4em;
@@ -39,24 +43,21 @@ $GrayLight: rgb(245,245,245);
         font-weight: 800;
         color: $BlueLight;
         
-    .dark{
-        color: $BlueDark;
-            }
-        }  
-    }
+        .dark{
+            color: $BlueDark;
+        }
+    }  
+}
 
 .right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-    .nav-contact{
-        
-        h2 {
+     .nav-contact{
+         h2 {
             font-size: 1em;
             font-weight: 800;
         }
-        
         button {
             display: flex;
             width:100%;
@@ -64,47 +65,39 @@ $GrayLight: rgb(245,245,245);
             color: #fff;
             justify-content: center;
             align-items: center;
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-weight: 600;
-            
-        img {
-            display: inline;
-            height: 50px;
-            width: 50px;
+            img {
+                display: inline;
+                height: 50px;
+                width: 50px;
             }
-       
         }
     }
 }
 
-
-
 .hero {
-    
     .row{
         background-image: url(Links/webuy-banner.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:cover;
         background-position: center center;
-        min-height: 400px;
+        min-height: 500px;
         display: flex;
         align-items: center;
-        
         .hero-text {
             padding: 20px 20px;
-            
-        h3{
+            h3{
             color: $BlueDarkest;
-            font-size: 3.2vmin;
+            font-size: 3.0vmin;
             font-weight: 800;
+            margin-bottom: 25px;
             }
-         }
-        
         li {
             list-style-type: none;
-            text-indent: -30px;
+            text-indent: -42px;
             font-size: 2.3vmin;
-            margin-left: 25px;
+            margin-left: 35px;
             line-height: 2.2em;
         }
         li:before {
@@ -112,53 +105,44 @@ $GrayLight: rgb(245,245,245);
             color: $BlueLight;
             font-size: 2em;
         }
-        
-        .hero-img {
-            
+      }
+    .hero-img {    
         min-height: 450px;
-        
         #five{
-            height: 200px;
-            position: absolute;
-            top: 20px;
-            right: 40px;
+        height: 170px;
+        position: absolute;
+        top: 30px;
+        right: 50px;
         }
-        
         #trust {
-            height: 150px;
-            position: absolute;
-            bottom: 20px;
-            right: 40px;
+        height: 150px;
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
         }
-        }
-    }
+     }
+  }
 }
-
-
 
 .input-form {
     background-color: $BlueLight;
     font-size: .90em;
-    
     .input-bar{
         height: 90px;
         display: flex;
         align-items: center;
         padding: 0px;
-        
         h4 {
             font-size: 1.3em;
             color: #fff;
             margin: 10px auto;
-            font-size: 1.5em;
-        }
-        
+            font-size: 2.3vmin;
+        } 
         input {
             margin: 0px 20px;
             border: 2px $BlueDark solid;
-            padding: 15px;
+            padding: 15px; 
         }
-        
         button {
             background-color: $BlueDark;
             border: 2px $BlueDark solid;
@@ -168,75 +152,53 @@ $GrayLight: rgb(245,245,245);
         }
     }
 }
-    #left p{
-        margin-right: 0px;
-    }
-
 
 .products {
     padding-top: 50px;
     padding-bottom: 50px;
-    .row {
-        padding: 60px 60px;
-        height: 400px;
-        
-        .car-box {
-            height: 350px;
+      .row {
+       .car-box {
             border-right: 1px solid #ccc;
             border-left: 1px solid #ccc;
-            
-            
-    h4{
-        font-weight: 800;
-        color: $BlueDark;
-        
-    }
-    
-    .flash{
-          bottom:0; 
-    }
-        
-    img{
-        position:absolute;
-        left: 0;
-        bottom: 20px;
-        padding: 20px;
-    }
-    
-    p {
-        font-size: 1.4vh;
-    position: absolute;
-    bottom: 20px;
-    left: 45px;
-    color: #fff;
-        .bold {
-            font-weight: 800;
-        }
-            }      
+            min-height: 500px;
+           .car {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            h4{
+                font-weight: 800;
+                color: $BlueDark;
+            }
+            .flash{
+                bottom:0; 
+            }
+            img{
+                position:absolute;
+                left: 0;
+                bottom: 50px;
+                padding: 10px;
+            }
         }
         #car-center{
             border: none;
-            
-        }
-    .car {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-        
- }
+        }  
+    }  
 }
 
 .header-main {
     background-color: $GrayLight;
     text-align: center;
-    padding: 20px;
-    
-    h1{
+    padding-bottom: 50px;
+     h1{
         font-weight: 700;
         color: $BlueDark;
         padding: 40px;
     }
 }
+
+
+
+
 
 
 
@@ -246,16 +208,14 @@ $GrayLight: rgb(245,245,245);
 
 
 
+
+
+
 @media screen and ( max-width: 990px ) {
     
     .input-form {
         font-size: .8em;
-        
         .input-bar {
-            align-items: center;
-            padding: 0px;
-            
-            
             input {
                 margin: 5px;
             }
@@ -263,21 +223,15 @@ $GrayLight: rgb(245,245,245);
     }
 }
 
-@media screen and ( max-width: 768px ) {
-    
-   
-    
-    
+
+@media screen and ( max-width: 767px ) {
+     
 .navigation {
     height: 210px;
-    
     .left {
         display: flex;
         justify-content: center;
-        padding: 10px;
-        
-        h1{
-        }  
+        padding: 10px; 
     }
     .right {
         display: block;
@@ -290,89 +244,93 @@ $GrayLight: rgb(245,245,245);
         margin: 0px;
         background-image: none;
         padding: 20px;
-        
         .hero-img {
             background-image:url(Links/stock-photo-young-woman-drive-a-car-294232229.jpg);
             background-size: cover;
+            background-position: center bottom;
             height: 400px;
-            margin-bottom: 40px;
-            
-        #five {
-            height: 150px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        
-        #trust {
-            height: 120px;
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
+            margin-bottom: 30px;
+            #five {
+                height: 120px;
+                top: 50px;
+                right: 10px;
+            }
+            #trust {
+                height: 100px;
+                bottom: 50px;
+                right: 10px;
             }
         }  
-      }
-    }
-
-.input-form {
-    font-size: 1em;
-        display: flex;
-        height: 180px;
-        align-items:center;
-        
-         #right {
-            padding-bottom: 20px;
-        }
-        
-        #left p{
-            margin: 0 auto;
-        }
-    
-        .input-bar{
-            justify-content: center;
-        
-        p {
-       
-        }
-        
-        input {
-
-        }
-            
-        button {
-
-        }
-    }
-}    
-   
-    .products {
-        .row{
-            .car-box{
-                border: none;
-                }
-    
-            .car {
-                margin-bottom: 45px;
-                }
-            #car-left, #car-center, #car-right{
-                margin: 30px 0px;
-                p {
-                    bottom: 30px;
-                    left:80px;
-                }
-            }
-            }
-        }
-    .header-main {
-        margin-top: 900px;
     }
 }
 
+.input-form {
+        height: 180px;
+        align-items:center;
+    .input-bar{
+        justify-content: center;   
+    }
+    #right {
+        padding-bottom: 20px;
+    }
+    #left h4{
+        margin: 0 auto;
+        font-size: 4vmin;
+    }      
+}    
+   
+.products {
+        .row{
+            .car-box{
+                border: none;
+                min-height: 450px;
+                padding: 30px;
+            }
+            .car {
+                margin-bottom: 50px;
+                max-height: 300px;
+                padding: 10px;
+            }
+            #car-left, #car-center, #car-right{
+                margin: 30px 0px;  
+            }
+         }
+     }
+}
+
+
+
 @media screen and ( max-width: 500px ) {
     
-    .input-form {
-        font-size: .7em;
-        
+.input-form {
+    font-size: .7em;
+}
+.products {
+    .row{
+        .car-box{
+            min-height: 380px;
+        }
+        .car {
+            margin-bottom: 10px;
+            max-height: 300px;
+            padding: 10px;
+        }
     }
+ }
+    
+.hero {
+    .row{
+        .hero-img {
+            #five {
+                height: 80px;
+                top: 80px;
+            }
+            #trust {
+                height: 80px;
+                bottom: 20px;
+            }
+        }  
+    }
+}          
 }
 
