@@ -132,6 +132,16 @@ h1 {
 .input-form {
   background-color: #629eca;
   font-size: .90em; }
+  .input-form #left {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .input-form #right {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .input-form .input-bar {
     height: 90px;
     display: -webkit-box;
@@ -144,14 +154,14 @@ h1 {
     align-items: center;
     padding: 0px; }
     .input-form .input-bar h4 {
-      font-size: 1.3em;
       color: #fff;
-      margin: 10px auto;
-      font-size: 2.3vmin; }
+      margin: 10px;
+      font-size: 1.8vw; }
     .input-form .input-bar input {
       margin: 0px 20px;
       border: 2px #0b51a1 solid;
-      padding: 15px; }
+      padding: 15px;
+      font-size: 13px; }
     .input-form .input-bar button {
       background-color: #0b51a1;
       border: 2px #0b51a1 solid;
@@ -191,11 +201,13 @@ h1 {
     color: #0b51a1;
     padding: 40px; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .input-form {
     font-size: .8em; }
     .input-form .input-bar input {
-      margin: 5px; } }
+      margin: 5px; }
+  .products .row .car-box {
+    min-height: 400px; } }
 
 @media screen and (max-width: 767px) {
   .navigation {
@@ -214,9 +226,10 @@ h1 {
       display: block;
       text-align: center; }
   .hero .row {
+    text-align: center;
     margin: 0px;
     background-image: none;
-    padding: 20px; }
+    padding-top: 20px; }
     .hero .row .hero-img {
       background-image: url(Links/stock-photo-young-woman-drive-a-car-294232229.jpg);
       background-size: cover;
@@ -249,11 +262,11 @@ h1 {
       font-size: 4vmin; }
   .products .row .car-box {
     border: none;
-    min-height: 450px;
+    min-height: 480px;
     padding: 30px; }
   .products .row .car {
     margin-bottom: 50px;
-    max-height: 300px;
+    max-height: 320px;
     padding: 10px; }
   .products .row #car-left, .products .row #car-center, .products .row #car-right {
     margin: 30px 0px; } }
@@ -262,7 +275,7 @@ h1 {
   .input-form {
     font-size: .7em; }
   .products .row .car-box {
-    min-height: 380px; }
+    min-height: 400px; }
   .products .row .car {
     margin-bottom: 10px;
     max-height: 300px;

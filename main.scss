@@ -10,13 +10,7 @@ $BlueLight: rgb(98,158,202);
 $GrayLight: rgb(245,245,245);
 
 
-
-
-
 //// start of page layout /////
-
-
-
 
 
 .navigation {
@@ -127,21 +121,29 @@ $GrayLight: rgb(245,245,245);
 .input-form {
     background-color: $BlueLight;
     font-size: .90em;
+    #left {
+        justify-content: center;
+    }
+    #right {
+        justify-content: center;
+    }
     .input-bar{
         height: 90px;
         display: flex;
         align-items: center;
         padding: 0px;
         h4 {
-            font-size: 1.3em;
             color: #fff;
-            margin: 10px auto;
-            font-size: 2.3vmin;
+            margin: 10px;
+            font-size: 1.8vw;
+            
         } 
         input {
             margin: 0px 20px;
             border: 2px $BlueDark solid;
-            padding: 15px; 
+            padding: 15px;
+            font-size: 13px;
+            
         }
         button {
             background-color: $BlueDark;
@@ -176,7 +178,7 @@ $GrayLight: rgb(245,245,245);
                 position:absolute;
                 left: 0;
                 bottom: 50px;
-                padding: 10px;
+                padding:  10px;
             }
         }
         #car-center{
@@ -198,29 +200,28 @@ $GrayLight: rgb(245,245,245);
 
 
 
-
-
-
-
 // start of media queries //
 
 
 
-
-
-
-
-
-@media screen and ( max-width: 990px ) {
+@media screen and ( max-width: 1200px ) {
     
-    .input-form {
-        font-size: .8em;
-        .input-bar {
-            input {
-                margin: 5px;
-            }
+.input-form {
+    font-size: .8em;
+    .input-bar {
+        input {
+            margin: 5px;
         }
     }
+}
+    
+.products {
+        .row{
+            .car-box{
+                min-height: 400px;
+            } 
+         }
+     }
 }
 
 
@@ -241,9 +242,10 @@ $GrayLight: rgb(245,245,245);
     
 .hero {
     .row{
+        text-align: center;
         margin: 0px;
         background-image: none;
-        padding: 20px;
+        padding-top: 20px;
         .hero-img {
             background-image:url(Links/stock-photo-young-woman-drive-a-car-294232229.jpg);
             background-size: cover;
@@ -283,12 +285,12 @@ $GrayLight: rgb(245,245,245);
         .row{
             .car-box{
                 border: none;
-                min-height: 450px;
+                min-height: 480px;
                 padding: 30px;
             }
             .car {
                 margin-bottom: 50px;
-                max-height: 300px;
+                max-height: 320px;
                 padding: 10px;
             }
             #car-left, #car-center, #car-right{
@@ -299,7 +301,6 @@ $GrayLight: rgb(245,245,245);
 }
 
 
-
 @media screen and ( max-width: 500px ) {
     
 .input-form {
@@ -308,7 +309,7 @@ $GrayLight: rgb(245,245,245);
 .products {
     .row{
         .car-box{
-            min-height: 380px;
+            min-height: 400px;
         }
         .car {
             margin-bottom: 10px;
@@ -333,4 +334,3 @@ $GrayLight: rgb(245,245,245);
     }
 }          
 }
-
